@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook - Sesión 4: ¡Entrega Rápida! – Modelo 3D Funcional Básico</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        .header { background-color: #ffa500; color: white; text-align: center; padding: 10px; } /* Orange Accent */
+        .activity { margin-bottom: 20px; }
+        details > summary {
+            background-color: #ffa500; /* Orange Accent */
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            font-weight: bold;
+            list-style: none; /* Hide the default marker */
+            display: flex; /* Use flexbox */
+            justify-content: space-between; /* Space between title and time */
+        }
+        details > summary::-webkit-details-marker {
+            display: none; /* Hide the default marker in Webkit browsers */
+        }
+        details > summary::before {
+            content: '▶ '; /* Collapsed state marker */
+            margin-right: 5px;
+        }
+        details[open] > summary::before {
+            content: '▼ '; /* Expanded state marker */
+        }
+        .content { display: block; padding: 10px; border: 1px solid #ddd; margin-bottom: 10px; margin-top: -10px; border-top: none;} /* Changed display to block */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+            vertical-align: top;
+        }
+        span[style*="color: red;"] {
+            font-weight: bold;
+        }
+         ul, ol {
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .time-title { margin-bottom: 20px; text-align: center; font-size: 1.2em; color: #555;} /* Style for static title */
+        .dialogue-notes {
+             font-style: italic;
+             color: #555;
+             margin-top: 5px;
+             display: block; /* Ensure notes appear on a new line */
+        }
+    </style>
+    <script>
+        // No specific JS needed for this structure, basic HTML5 <details> handles toggle.
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Playbook - Sesión 4: ¡Entrega Rápida! – Modelo 3D Funcional Básico</h1>
+    </div>
+    <div class="container">
+        <h2 class="time-title">Tiempo efectivo de clase: 40 minutos</h2>
+
+        <!-- Resumen de Sesión -->
+        <details id="activity-0" class="activity" open>
+            <summary>📝 Resumen de Sesión</summary>
+            <div class="content">
+                <table>
+                    <tr>
+                        <td style="width: 50%; padding: 10px; border-right: 1px solid #ddd;">
+                            <strong>🎯 Objetivo de la Sesión:</strong>
+                            <ul>
+                                <li>Realizar ajustes finales al Modelo 3D Núcleo.</li>
+                                <li>Verificar el funcionamiento conceptual completo del modelo.</li>
+                                <li>Guardar correctamente el proyecto final en Tinkercad.</li>
+                                <li>Preparar y realizar la entrega digital del prototipo funcional básico al profesor.</li>
+                            </ul>
+                        </td>
+                        <td style="width: 50%; padding: 10px;">
+                            <strong>🔑 Entregable Clave de la Sesión:</strong>
+                            <ul>
+                                <li>Modelo 3D Núcleo finalizado, revisado y guardado en Tinkercad con nombre claro.</li>
+                                <li>(Opcional) Archivo STL básico exportado como prueba.</li>
+                                <li>Entrega digital realizada según las instrucciones del profesor (enlace, archivo, etc.).</li>
+                                <li>Tarjeta "Preparar Entrega Rápida" movida a "¡Listo!" en el Kanban.</li>
+                            </ul>
+                             <strong>🔧 Preparación Previa Sugerida:</strong>
+                            <ol>
+                                <li>Tener acceso a los modelos 3D de Tinkercad actualizados de la sesión anterior.</li>
+                                <li>Disponer de los tableros Kanban.</li>
+                                <li>Definir y tener claras las instrucciones específicas para la entrega digital (plataforma, formato de enlace/archivo, etc.).</li>
+                                <li>Revisar cómo exportar STL en Tinkercad (si se planea como opcional).</li>
+                                <li>Tener lista la presentación de diapositivas sugerida.</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+
+        <!-- Desarrollo de la Sesión -->
+
+        <!-- Actividad 1: ¡Saludo y Meta Final Express! -->
+        <details id="activity-1" class="activity">
+            <summary>🏁 Actividad 1: ¡Saludo y Meta Final Express! <span>⏰ Tiempo: 1.5 minutos</span></summary>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 1: (1.5 min) Saludo, objetivo final y concentración.</strong>
+                            <br>(Proyectar Diapositiva 1: Título Sesión 4 + Icono Bandera a Cuadros/Meta 🏁)
+                            <br>Reunir a los equipos con energía.
+                            <br>(Proyectar Diapositiva 2: Meta Final Express - Objetivo claro)
+                        </td>
+                        <td>
+                            "¡Equipo 3D! ¡Última sesión de nuestro Prototipo Rápido ODS Express! Hoy es el día de la entrega. Vamos a dar los últimos retoques a nuestro Modelo 3D Núcleo, asegurarnos de que todo esté en orden y prepararlo para la entrega final."
+                            <br><br>
+                            "¡Máxima concentración hoy! Nuestro objetivo es dejar ese modelo básico listo y entregado. ¡Vamos a por ello!"
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+
+        <!-- Actividad 2: ¡Última Puesta a Punto y Verificación 3D! -->
+        <details id="activity-2" class="activity">
+            <summary>🔧 Actividad 2: ¡Última Puesta a Punto y Verificación 3D! <span>⏰ Tiempo: 33.5 minutos</span></summary>
+            <div class="content">
+                <table>
+                     <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 1: (5 min) Corregir bugs menores pendientes.</strong>
+                            <br>Modelador/a y Validador/a 3D colaboran para solucionar cualquier fallo pequeño identificado en la sesión anterior y que aún esté pendiente (en ⚙️ o 🧐).
+                            <br>Arquitecto/a 3D apoya si es necesario.
+                            <br>(Proyectar Diapositiva 3: Puesta a Punto Final - Icono de herramientas 🛠️ + lupa 🧐)
+                            <br>Facilitador circula para asegurar que los equipos abordan los últimos detalles.
+                        </td>
+                        <td>
+                            "Primero, dediquemos unos minutos a solucionar esos pequeños 'bugs' o detalles que quedaron pendientes de la última revisión. Modelador/a y Validador/a, trabajen juntos para corregir esos últimos ajustes. Arquitecto/a, apoya si surge alguna duda."
+                            <br><br>
+                            "¡Que quede lo más pulido posible!"
+                            <br><span class="dialogue-notes">(Asegurarse de que los equipos se enfoquen en los fallos ya identificados).</span>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <strong>Paso 2: (10 min) Verificación final completa por el Validador/a 3D.</strong>
+                            <br>El Validador/a 3D realiza una última revisión COMPLETA del modelo núcleo ensamblado en Tinkercad.
+                            <br>(Proyectar Diapositiva 4: Verificación Final Checklist - Criterios clave)
+                            <br>Criterios clave:
+                            <ul>
+                                <li>¿Representa la idea central del T-Bar/MVP?</li>
+                                <li>¿Las partes encajan visualmente de forma coherente?</li>
+                                <li>¿Las dimensiones generales son las esperadas?</li>
+                                <li>¿Está limpio (sin piezas sueltas o errores obvios)?</li>
+                            </ul>
+                            <br>El Modelador/a y Arquitecto/a están atentos al feedback.
+                        </td>
+                        <td>
+                            "Validador/a, ahora te toca la gran verificación final. Revisa el modelo completo en Tinkercad."
+                            <br><br>
+                            "Confirma: ¿Este modelo realmente representa la idea central que definimos en el T-Bar y como MVP? ¿Todas las partes que hemos construido encajan bien visualmente? ¿El tamaño general es el que esperábamos? ¿Se ve 'limpio', sin errores evidentes?"
+                            <br><br>
+                            "¡Es la última revisión de calidad antes de la entrega!"
+                             <br><span class="dialogue-notes">(Animar a usar diferentes vistas y zoom en Tinkercad para la revisión).</span>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <strong>Paso 3: (10 min) Ajustes finales de pulido visual por el Modelador/a 3D (si el tiempo permite).</strong>
+                            <br>Basado en el feedback del Validador/a (si hubo detalles menores) o por iniciativa propia, el Modelador/a realiza pequeños ajustes estéticos o de acabado (suavizar bordes si aplica, asegurar colores coherentes, etc.).
+                            <br>El Validador/a y Arquitecto/a dan su visto bueno final.
+                        </td>
+                        <td>
+                            "Modelador/a, si el tiempo lo permite y el Validador/a dio algún pequeño feedback final, o si ves alguna mejora estética rápida que hacer (como ajustar colores o suavizar alguna unión), dedica estos minutos a darle el último toque de 'pulido' visual a nuestro modelo."
+                            <br><br>
+                            "Que se vea lo mejor posible dentro del alcance de nuestro prototipo básico."
+                            <br><span class="dialogue-notes">(Aclarar que son ajustes menores, no cambios estructurales grandes).</span>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <strong>Paso 4: (5 min) Guardar versión final y Exportar STL (Opcional).</strong>
+                            <br>Modelador/a 3D y Arquitecto/a 3D se aseguran de guardar la versión DEFINITIVA en Tinkercad con un nombre claro y estandarizado.
+                            <br>(Proyectar Diapositiva 5: Guardado Final y Nomenclatura - Instrucciones claras)
+                            <br>Ejemplo de nombre: "Equipo_Alfa_ODS13_Nucleo_VFinal".
+                            <br>(Opcional, si se enseñó) Exportar un archivo STL básico como prueba de que el modelo es exportable.
+                            <br>Facilitador recuerda la importancia del nombre claro.
+                        </td>
+                        <td>
+                            "¡Momento crucial! Vamos a guardar la versión final finalísima. Arquitecto/a y Modelador/a, asegúrense de ir a Tinkercad y guardar el proyecto con un nombre muy claro que todos entendamos."
+                            <br><br>
+                            "Usen un formato como: <strong>[NombreEquipo]_[ODS#]_[TipoModelo]_VFinal</strong>. Por ejemplo: <strong>Equipo_Alfa_ODS13_Nucleo_VFinal</strong>."
+                            <br><br>
+                            "Esto es súper importante para la entrega."
+                            <br><br>
+                            <em>(Opcional)</em> "Si aprendimos a exportar STL, pueden hacer una exportación rápida ahora como prueba, ¡pero no es obligatorio para la entrega de hoy!"
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <strong>Paso 5: (3.5 min) Supervisión final del Arquitecto/a 3D y Mover Tarjeta Kanban.</strong>
+                             <br>El Arquitecto/a 3D revisa por última vez la integridad general del modelo guardado y confirma que está listo según el MVP definido.
+                             <br>El Arquitecto/a (o quien gestione el Kanban) busca la tarjeta "Preparar Entrega Rápida" (o similar creada para esta fase) y la mueve de donde esté (probablemente 'Por Hacer' o 'Modelando') directamente a '¡Listo!' (✅).
+                        </td>
+                        <td>
+                            "Arquitecto/a 3D, dale el último visto bueno general. ¿Confirma que este modelo guardado representa nuestro MVP y está listo para la entrega?"
+                            <br><br>
+                            <em>(Esperar confirmación del Arquitecto/a).</em>
+                             <br><br>
+                            "¡Perfecto! Ahora, busquen en su Kanban la tarjeta que representa la preparación para la entrega (puede llamarse 'Preparar Entrega Rápida' o algo similar) y muévanla a la columna '¡Listo!' (✅). ¡Hemos completado la fase de construcción y revisión!"
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+
+        <!-- Actividad 3: ¡Entrega Digital Preparada! -->
+        <details id="activity-3" class="activity">
+            <summary>📤 Actividad 3: ¡Entrega Digital Preparada! <span>⏰ Tiempo: 5 minutos</span></summary>
+            <div class="content">
+                 <table>
+                     <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                             <strong>Paso 1: (2 min) Instrucciones claras de entrega por el Profesor.</strong>
+                             <br>El facilitador explica EXACTAMENTE cómo deben entregar el trabajo los equipos.
+                             <br>(Proyectar Diapositiva 6: Instrucciones de Entrega Digital - Pasos claros)
+                             <br>Ejemplos:
+                             <ul>
+                                 <li>Compartir enlace público de Tinkercad y pegarlo en [plataforma X].</li>
+                                 <li>Subir el archivo STL (si se pidió) a [carpeta Y].</li>
+                                 <li>Enviar el enlace por [correo Z].</li>
+                             </ul>
+                             <br>Asegurarse de que todos los equipos comprenden el procedimiento. Resolver dudas sobre la entrega.
+                        </td>
+                        <td>
+                            "¡Muy bien, equipos! Modelo listo, guardado y confirmado. Ahora, la entrega digital. Escuchen atentamente las instrucciones:"
+                            <br><br>
+                            <em>(El facilitador explica aquí el procedimiento EXACTO que haya definido previamente. Ser muy claro y específico).</em>
+                             <br>
+                             <strong>Ejemplo de Instrucción:</strong> "Van a generar un enlace público para compartir su diseño de Tinkercad. Copien ese enlace y péguenlo en el documento compartido que les envié llamado 'Entregas Prototipo ODS'. Asegúrense de poner el nombre de su equipo al lado del enlace."
+                             <br><br>
+                             "¿Alguna duda sobre cómo hacer la entrega?"
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                             <strong>Paso 2: (2 min) Equipos realizan la entrega digital.</strong>
+                             <br>Los equipos siguen las instrucciones y realizan la acción de entrega (compartir enlace, subir archivo, etc.).
+                             <br>Facilitador supervisa que los equipos estén realizando la entrega correctamente y ayuda con problemas técnicos de último minuto relacionados con la entrega.
+                        </td>
+                        <td>
+                             "Perfecto. Ahora tienen 2 minutos para realizar la entrega digital exactamente como les indiqué. ¡Adelante!"
+                             <br><span class="dialogue-notes">(Circular y verificar que los equipos están logrando compartir/subir lo necesario).</span>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                             <strong>Paso 3: (1 min) Cierre y reconocimiento final.</strong>
+                             <br>(Proyectar Diapositiva 7: ¡Misión Rápida Cumplida! - Mensaje de felicitación)
+                         </td>
+                        <td>
+                             "¡Equipos, lo han logrado! ¡Entrega realizada!"
+                             <br><br>
+                             "¡Misión Rápida Cumplida! Han modelado el corazón de su idea ODS. Ha sido un gran trabajo de diseño 3D en equipo en estas cuatro sesiones. ¡Han aprendido a planificar, modelar, revisar y entregar un prototipo funcional básico!"
+                             <br><br>
+                             "¡Felicidades por este increíble esfuerzo y por completar su prototipo rápido! 🎉"
+                         </td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+
+    </div> <!-- Fin del container -->
+</body>
+</html>
